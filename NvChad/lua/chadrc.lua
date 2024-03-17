@@ -1,8 +1,8 @@
 local M = {}
 
 M.ui = {
-	theme = "onedark",
-	theme_toggle = { "onedark", "one_light" },
+	theme = "chadracula-evondev",
+	theme_toggle = { "chadracula-evondev", "one_light" },
 
 	hl_override = {
 		Comment = {
