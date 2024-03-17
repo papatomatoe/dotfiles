@@ -43,4 +43,5 @@ map("n", "<leader>gt", ":DiffviewToggleFile<CR>", { desc = "Git Last Commit" })
 -- map("i", "<C-g>", function()
 -- 	return vim.fn["codeium#Accept"]()
 -- end, { error = true })
+
 map("i", "jj", "<ESC>", { desc = "Escape insert mode" })
