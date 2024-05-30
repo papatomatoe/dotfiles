@@ -2,10 +2,6 @@
 
 [
 	// ------------- VIM ------------------
-	// {
-	// 	"command": "projectManager.listGitProjects#sideBarGit",
-	// 	"key": "ctrl+o"
-	// },
 	{
 		"command": "expand_region",
 		"key": "alt+=",
@@ -79,6 +75,24 @@
 	{
 		"key": "ctrl+j",
 		"command": "workbench.action.navigateDown"
+	},
+	{
+		"args": "<C-d>",
+		"command": "vscode-neovim.send",
+		"key": "ctrl+d",
+		"when": "editorFocus && neovim.init"
+	},
+	{
+		"args": "<CS-d>",
+		"command": "vscode-neovim.send",
+		"key": "ctrl+shift+d",
+		"when": "editorFocus && neovim.init"
+	},
+	{
+		"args": "<CS-l>",
+		"command": "vscode-neovim.send",
+		"key": "ctrl+shift+l",
+		"when": "editorFocus && neovim.init"
 	}
 	// ------------- END VIM ------------------------
 
