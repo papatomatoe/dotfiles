@@ -99,7 +99,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias cl="clear"
+alias pm="pnpm"
+alias open="xdg-open"
 alias ls="eza --tree --level=1 --icons=always --no-time --no-user --no-permissions"
+alias lg="lazygit"
 
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
@@ -115,6 +119,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# deno
+export DENO_INSTALL="/home/papatomatoe/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
 # Homebrew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
@@ -126,3 +134,11 @@ eval "$(starship init zsh)"
 
 
 
+
+# bun completions
+[ -s "/home/papatomatoe/.bun/_bun" ] && source "/home/papatomatoe/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH=$HOME/.local/bin:$PATH
